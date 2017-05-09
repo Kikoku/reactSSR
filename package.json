@@ -12,7 +12,8 @@
   "homepage": "https://github.com/kikoku/reactSSR",
   "keywords": [],
   "scripts": {
-    "start": "babel-node -- server/index.js"
+    "build:dev": "webpack",
+    "start": "npm run build:dev && babel-node -- server/index.js"
   },
   "dependencies": {
     "express": "^4.15.2",
