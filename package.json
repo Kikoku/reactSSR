@@ -12,7 +12,7 @@
   "homepage": "https://github.com/kikoku/reactSSR",
   "keywords": [],
   "scripts": {
-    "build:dev": "webpack",
+    "build:dev": "webpack --config ./webpack/webpack.config.dev-ssr.js",
     "start": "npm run build:dev && babel-node -- server/index.js"
   },
   "dependencies": {
